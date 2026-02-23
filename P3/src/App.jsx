@@ -1,12 +1,12 @@
 import { Fragment } from "react";
 import NetflixSerie from "./components/NetflixSerie";
-import Practices from "./Practices";
-import {
-  WatchOtt,
-  WatchOtt1,
-  WatchOtt2,
-  WatchOtt3,
-} from "./components/WatchOtt";
+// import Practices from "./Practices";
+// import {
+//   WatchOtt,
+//   WatchOtt1,
+//   WatchOtt2,
+//   WatchOtt3,
+// } from "./components/WatchOtt";
 
 import Import, {Export,Export1} from "./Import&Export"; 
 
@@ -15,9 +15,9 @@ const App = () => {
     <Fragment>
       {/*         ,#11 */}
       <NetflixSerie />
-      <br />
+      {/* /* <br /> */}
 
-      <hr />
+      {/* <hr />
       <WatchOtt />
       <hr />
       <WatchOtt1 />
@@ -26,16 +26,15 @@ const App = () => {
       <hr />
       <WatchOtt3 />
       <hr />
-
-      {/* #9 */}
+// 9
       <Practices />
 
-      {/* 10 */}
+      10
       <Import/>
       <Export/>
       <Export1 />
 
-      
+       */} 
     </Fragment>
   );
 };
