@@ -14,7 +14,7 @@ export const SeriesCard = ({ currElement }) => {
     cursor : "pointer"
   };
 
-  const ratingClass = rating >= 8.5 ? style.super_hit : style.average; {/*2. here rating is not applied bcz it object therefore it need to be style.super-hit cz it's objects' property and since it's js we not need {}*/}
+  const ratingClass = rating >= 8.5 ? style.super_hit : style.average; {/*2. here rating is not applied bcz it object therefore it need to be style.super-hit bcz it's objects' property and since it's js we not need {}*/}
   
   return (
     // When using CSS Modules in React, we cannot directly write className="card" because CSS Modules generate unique class names.
