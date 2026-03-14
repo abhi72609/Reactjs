@@ -6,11 +6,13 @@ import "./Components/NetflixStyle.module.css";
 
 
 export const App = () => {
-    // lecture No - 20 (CSS Module)
+    
     return(
         <section className="container">
             {/* <h1 className="card-heading"> List of Best Web series On Netflix</h1>
             <NetflixSeries /> */}
+            
+            {/* lecture No - 23 (   EVENT HANDLING  ) */}
             <EventHandling />
         </section>
     );

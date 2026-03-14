@@ -19,13 +19,13 @@ export const EventHandling = () => {
   return (
     <>
       {/*   Function Components with Named Functions  :-
-       Remember how we haven't called this function, if you call this function here  then it will run without even clicking. You just need to pass reference and not call here. */}
+       Remember now we haven't called this function, if you call this function here  then it will run without even clicking. You just need to pass reference and not call here. */}
       <button onClick={handleButtonClick}>click Me</button>
       <br />
       <br />
 
       {/* In React, event handlers receive the event object as an argument by default. However, when you use an arrow function directly in the onClick attribute without passing the event explicitly, React doesn't pass the event object to your handler function. This is because the arrow function creates a new function and calls your handler without passing any arguments. */}
-
+        {/* FAT ARROW FUNCTION    OR    ARROW FUNCTION */}
       <button onClick={(event) => handleButtonClick(event)}>click Me 2 </button>
       <br />
       <br />
@@ -36,7 +36,7 @@ export const EventHandling = () => {
       <br />
 
       {/* //? Function Components with Inline Arrow Functions */}
-      <button onClick={() => alert("Hey I am inline evnt function")}>
+      <button onClick={() => alert("Hey I am inline event function")}>
         Inline Arr fun
       </button>
       <br />
