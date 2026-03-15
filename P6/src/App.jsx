@@ -1,7 +1,9 @@
 // import NetflixSeries from "./Components/NetflixSeries";
 // import "./Components/NetflixStyle.css"
 
-import {EventHandling} from "./Components/EventHandling"
+// import {EventHandling} from "./Components/EventHandling"
+
+import { EventProps } from "./Components/EventProps";
 import "./Components/NetflixStyle.module.css"; 
 
 
@@ -13,7 +15,10 @@ export const App = () => {
             <NetflixSeries /> */}
             
             {/* lecture No - 23 (   EVENT HANDLING  ) */}
-            <EventHandling />
+            {/* <EventHandling /> */}
+
+            {/* lecture No - 24 (   PASSING EVENT AS PROPS  ) */}
+            <EventProps />
         </section>
     );
 };
