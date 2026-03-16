@@ -3,7 +3,8 @@
 
 // import {EventHandling} from "./Components/EventHandling"
 
-import { EventProps } from "./Components/EventProps";
+// import { EventProps } from "./Components/EventProps";
+import { EventPropagation } from "./Components/EventPropagation";
 import "./Components/NetflixStyle.module.css"; 
 
 
@@ -18,7 +19,9 @@ export const App = () => {
             {/* <EventHandling /> */}
 
             {/* lecture No - 24 (   PASSING EVENT AS PROPS  ) */}
-            <EventProps />
+            {/* <EventProps /> */}
+            
+            <EventPropagation />
         </section>
     );
 };

@@ -19,7 +19,7 @@ export const EventProps = () => {
 const WelcomeUser = (props) => {
     const { onClick, onMouseEnter} = props;
     const handleGreeting = () => {
-        console.log(`Hey User, Welome`);
+        console.log(`Hey User, Welcome`);
         onClick();
     };
     return(
