@@ -6,7 +6,6 @@ export const App = () => {
     
     return(
         <section className="container">
-            
             <State />
         </section>
     );
