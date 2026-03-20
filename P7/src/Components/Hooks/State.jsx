@@ -22,6 +22,7 @@
 
 import { Children, useState } from "react";
 export const State = () => {
+    console.log("Parent Component Rerendered");
     const [count, setCount] = useState(0);
     const handleButtonClick = () => {
         setCount(() => count + 1);
@@ -33,7 +34,16 @@ export const State = () => {
             <h1>{count}</h1>
             <button onClick={handleButtonClick}>Increment</button>
         </div>
-        <ChildComp />
+        <ChildComponent />
     </>
     );
 };
+
+function ChildComponent ({count}){
+    console.log("Child Component Rendered");
+    return (
+        <div>
+            <h2>Child Component - {count} </h2>
+        </div>
+    );
+}
