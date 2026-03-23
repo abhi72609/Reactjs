@@ -20,30 +20,38 @@
 
 //  Lecture :- #27 [    How React State Works: In-depth Guide with Theory, Animation, and Practical Examples    ]
 
-import { Children, useState } from "react";
-export const State = () => {
-    console.log("Parent Component Rerendered");
-    const [count, setCount] = useState(0);
-    const handleButtonClick = () => {
-        setCount(() => count + 1);
-    };
+// import { Children, useState } from "react";
+// export const State = () => {
+//     console.log("Parent Component Rerendered");
+//     const [count, setCount] = useState(0);
+//     const handleButtonClick = () => {
+//         setCount(() => count + 1);
+//     };
     
-    return(
-    <>
-        <div className="main-div">
-            <h1>{count}</h1>
-            <button onClick={handleButtonClick}>Increment</button>
-        </div>
-        <ChildComponent />
-    </>
-    );
-};
+//     return(
+//     <>
+//         <div className="main-div">
+//             <h1>{count}</h1>
+//             <button onClick={handleButtonClick}>Increment</button>
+//         </div>
+//         <ChildComponent />
+//     </>
+//     );
+// };
 
-function ChildComponent ({count}){
-    console.log("Child Component Rendered");
-    return (
-        <div>
-            <h2>Child Component - {count} </h2>
-        </div>
-    );
-}
+// function ChildComponent ({count}){
+//     console.log("Child Component Rendered");
+//     return (
+//         <div>
+//             <h2>Child Component - {count} </h2>
+//         </div>
+//     );
+// }
+
+
+
+
+
+
+// Lecture :- #29   [   React JS State Challenge: Master useState with Objects - Test Your Skills 🧑‍💻    ] 
+// Inside Hooks Folder Named as DrivedState
