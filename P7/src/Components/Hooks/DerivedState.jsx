@@ -13,7 +13,8 @@ export const DerivedState = () => {
     {name:"Abhi",age:25},
     {name:"Riya",age:24},
     {name:"Toxic",age:45},
-    {name:"Ranveer",age:35}
+    {name:"Ranveer",age:35},
+    {name:"Divya",age:25}
 ])
     return(
         <div className="main-div">
