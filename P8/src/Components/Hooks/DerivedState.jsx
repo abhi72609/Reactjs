@@ -33,15 +33,6 @@
 // }
 
 
-
-
-
-
-
-
-
-
-
 // Lecture :- #30   [   Derived State in Reactjs    ] 
 import { useState } from "react"
 
