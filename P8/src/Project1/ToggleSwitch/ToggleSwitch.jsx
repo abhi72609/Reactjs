@@ -15,7 +15,7 @@ export const ToggleSwitch = () => {
   return (
     <>
       <h1 style={{color: "#000",testAlign:"center"}}>
-        ToggleSwtich <IoIosSwitch />
+        ToggleSwtich Next project <IoIosSwitch />
       </h1>
       <div
         className="toggle-switch"
