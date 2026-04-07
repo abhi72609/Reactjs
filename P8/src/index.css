@@ -2,7 +2,7 @@
    It allows you to define styles that should be applied globally, affecting all components within the app */
 
 /* base rule */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -39,7 +39,7 @@ a {
   text-decoration: none;
 }
 
-/* theme */
+theme
 :root {
   --main-color: #0062ff;
   --supporting-color: #ebf3fe;
@@ -54,7 +54,7 @@ a {
   --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-/* layout */
+/* layout 
 .container {
   max-width: 142rem;
   margin: 0 auto;
@@ -72,4 +72,4 @@ a {
 
 .grid-three--cols {
   grid-template-columns: repeat(3, 1fr);
-}
+} */
