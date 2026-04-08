@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MdCheck,MdDeleteForever } from "react-icons/md";
 import "./Todo.css";
+
 export const ToDo = () => {
     const[inputValue,setInputValue] = useState("");
     const[task,setTask] = useState([]);
+    const[Datetime,setDateTime] = useState("");
 
     const handleInputChange = (value) => {
         setInputValue(value);
@@ -17,24 +19,43 @@ export const ToDo = () => {
         
         // if array already has value then return 
         if(task.includes(inputValue)){
-            // once item is add the inputBox will get empty that's why setInputValue to empty String -> "" 
+            //clears on duplicate that's why setInputValue to empty String -> "" 
             setInputValue("");
             return;
         } 
 
         // it keep prev add item and also keep new item bcz of ""...prevTask" separator prev item are safe
         setTask((prevTask) => [...prevTask,inputValue]);
-
+        
+        setInputValue(""); //clears after successful add
         
     }
 
+    // ToDo Date and Time
+    // setInterval(() => {
+    //     const now = new Date()
+    //     const formattedDate = now.toLocaleDateString();
+    //     const formattedTime = now.toLocaleTimeString();
+    //     setDateTime(`${formattedDate} - ${formattedTime}`)
+    // },1000)
+    useEffect(() => {
+        const interval = setInterval(() => {
+        const now = new Date()
+        const formattedDate = now.toLocaleDateString();
+        const formattedTime = now.toLocaleTimeString();
+        setDateTime(`${formattedDate} - ${formattedTime}`)
+        },1000)
+
+        return () => clearInterval(interval)
+    },[]);
 
     return(
         <section className="todo-container">
-            <header>
+            <header className="header">
                 <h1>ToDo List</h1>
+                <h2 className="date-time">{Datetime}</h2>
             </header>
-
+            
             <section className="form">
                 <form onSubmit={handleFormSubmit}>
                     <div>
