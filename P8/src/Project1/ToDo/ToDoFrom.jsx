@@ -1,16 +1,15 @@
 import { useState } from "react";
 
 export const ToDoForm = ({onAddToDo}) => {
-    const [inputValue, setInputValue] = useState("");
+    const [inputValue, setInputValue] = useState({}); // inputValue is object 
     const handleInputChange = (value) => {
-        setInputValue(value);
+        setInputValue({id:value, content:value, checked:false});
     }
 
-    // Bcz form is avilable here in this component therefore event is used here not in ToDo.jsx
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        onAddToDo(inputValue); // using this parent function is called and inputValue(item) is passed
-        setInputValue(""); //clears after successful add
+        onAddToDo(inputValue); 
+        setInputValue({id:"", content:"", checked:false}); 
     }
 
   return (
@@ -21,7 +20,7 @@ export const ToDoForm = ({onAddToDo}) => {
             type="text"
             className="todo-input"
             autoComplete="off"
-            value={inputValue}
+            value={inputValue.content}
             onChange={(event) => handleInputChange(event.target.value)}
           />
         </div>
