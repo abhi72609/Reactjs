@@ -48,7 +48,8 @@ export const ToDo = () => {
     return(
         <section className="todo-container">
             <header className="header">
-                <h1>ToDo List</h1>
+                <h1>ToDo List Project</h1>
+                
                 {/* Component for ToDoDateTime */}
                 <ToDoDateTime /> 
             </header>
