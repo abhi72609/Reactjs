@@ -4,9 +4,16 @@ import "./Todo.css";
 import { ToDoForm } from "./ToDoFrom";
 import { ToDoList } from "./ToDoList";
 import { ToDoDateTime } from "./ToDoDateTime";
+import { getLocalStorageToDoData, setLocalStorageToDoData } from "./ToDoLocalStorage";
 
 export const ToDo = () => {
-    const[task,setTask] = useState([]);
+    const[task,setTask] = useState(() => 
+        getLocalStorageToDoData()
+        // // getting data back from the local Stroge(Web Browser)
+        // const rowToDos = localStorage.getItem(toDoKeys);
+        // if(!rowToDos) return [];
+        // return JSON.parse(rowToDos);
+    );
 
 
     const handleFormSubmit = (inputValue) => {
@@ -23,6 +30,10 @@ export const ToDo = () => {
         
         setTask((prevTask) => [...prevTask,{id,content,checked}]);
     }
+
+    // ToDO - Add data to Local Storage
+    // localStorage.setItem(toDoKeys,JSON.stringify(task)) stringify(task)- to convert array into String
+    setLocalStorageToDoData(task)
 
     // todo -> handleDeleteToDo function
     const handleDeleteToDo = (value) => {
@@ -48,8 +59,7 @@ export const ToDo = () => {
     return(
         <section className="todo-container">
             <header className="header">
-                <h1>ToDo List Project</h1>
-                
+                <h1>ToDo List</h1>
                 {/* Component for ToDoDateTime */}
                 <ToDoDateTime /> 
             </header>
@@ -59,7 +69,8 @@ export const ToDo = () => {
                 <ul>
                     {task.map((curTask) => {
                         return (
-                            // Component for ToDoList
+                            // Component for ToDoList 
+                            // add  onHandleCheckedToDo
                             <ToDoList 
                             key={curTask.id} 
                             data={curTask.content}
