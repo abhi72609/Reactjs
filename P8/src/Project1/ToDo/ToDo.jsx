@@ -70,7 +70,6 @@ export const ToDo = () => {
                     {task.map((curTask) => {
                         return (
                             // Component for ToDoList 
-                            // add  onHandleCheckedToDo
                             <ToDoList 
                             key={curTask.id} 
                             data={curTask.content}
