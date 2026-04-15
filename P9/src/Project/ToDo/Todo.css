@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MAIN CONTAINER */
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(100deg, #001214, #001f29);
+  color: white;
+  padding: 5rem 3rem;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.header h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.date-time {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0.7;
+}
+
+/* WRAPPER (controls width of everything) */
+.wrapper {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FORM */
+form {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+form input {
+  flex: 1;
+  padding: 12px;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  border-radius: 20px 0 0 20px;
+  background: #f2f3f4;
+  color: #000;
+}
+
+form button {
+  padding: 12px 18px;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  background: #5dade2;
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background: #3498db;
+}
+
+/* LIST */
+.todo-list {
+  width: 100%;
+  list-style: none;
+}
+
+/* TODO ITEM */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 1.3rem 1.6rem;
+  margin-bottom: 1rem;
+
+  background: #f2f3f4;
+  color: #1c2833;
+  border-radius: 20px;
+
+  gap: 10px;
+  transition: 0.2s ease;
+}
+
+.todo-item:hover {
+  transform: scale(1.02);
+}
+
+/* TEXT */
+.todo-item span {
+  flex: 1;
+  font-size: 1.6rem;
+}
+
+/* BUTTON GROUP */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* BUTTONS */
+.check-btn,
+.delete-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.check-btn {
+  background: #2ecc71;
+  color: white;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+/* STATES */
+.checkList {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.clear-btn {
+  height: 3.5rem;
+  width: 6.5rem;
+  background: #e74c3c;
+  color: white;
+  font-size: larger;
+  border-radius: 30px;
+}
+
+
+/* .todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 3%;
+  background-image: linear-gradient(100deg, #001214, #001f29);
+  color: white;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+section h1 {
+  font-size: 4.5rem;
+}
+
+.date-time {
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+form input {
+  flex: 1;
+  padding: 12px;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  border-radius: 20px 0 0 20px;
+  background-color: #f9f8f8;
+  color: #001214;
+}
+
+form button {
+  padding: 12px 20px;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  background-color: #5dade2;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #3498db;
+}
+
+.myUnOrdList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-list {
+  width: 100%;
+  max-width: 600px;
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 1.5rem 2rem;
+  background-color: #f2f3f4;
+  color: #1c2833;
+  border-radius: 25px;
+  width: 100%;
+}
+
+.todo-item span {
+  flex: 1;
+  font-size: 1.6rem;
+}
+
+.check-btn,
+.delete-btn {
+  font-size: 1.8rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+
+.check-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.checkList {
+  text-decoration: line-through;
+}
+
+.notCheckList {
+  text-decoration: none;
+} */
